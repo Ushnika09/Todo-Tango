@@ -6,7 +6,11 @@ function Todo({ todos,handleDel,handleEdit }) {
   const [done, setDone] = useState([]);
 
   useEffect(() => {
-    setDone(todos.map(() => false));
+    setDone((prev)=>{
+      return(
+        todos.map((_,i) =>prev[i] || false)
+      )}
+    );
   }, [todos]);
 
   const completedCount = done.filter(Boolean).length;
@@ -34,7 +38,15 @@ function Todo({ todos,handleDel,handleEdit }) {
 
             <div className="flex gap-5 justify-center items-center">
               <img src={edit} onClick={()=>handleEdit(index)} className="h-[2rem]" />
-              <img src={del} onClick={()=>handleDel(index)} className="h-[2rem]" />
+
+              <img src={del} onClick={()=>{
+                handleDel(index)
+                let newDone=[...done]
+                newDone.splice(index,1)
+                setDone(newDone)
+                }} 
+                className="h-[2rem]" />
+
             </div>
           </div>
         );
