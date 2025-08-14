@@ -1,12 +1,53 @@
-# React + Vite
+# 🎵 Todo Tango – Dance Through Tasks 💃🕺
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A lively and interactive Todo List app built with React and TailwindCSS.**  
+💡 Dance through your tasks, mark them complete, edit, and delete with ease – productivity has never been this fun!  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ✅ Add new tasks effortlessly.  
+- 🟢 Mark tasks as completed (live counter included!).  
+- ✏️ Edit tasks on the fly.  
+- 🗑️ Delete tasks when they’re done.  
+- 📝 Long tasks wrap neatly inside the card.  
+- 🎯 Live task completion tracker: shows `0 / X tasks completed`.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React  
+- **Styling:** TailwindCSS  
+- **Assets:** Local icons for add, edit, delete  
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js installed  
+- npm or yarn  
+
+### Steps to Run
+
+1️⃣ **Clone the repository:**
+
+git clone https://github.com/Ushnika09/Todo-Tango.git
+cd Todo-Tango
+
+2️⃣ **Install dependencies:**
+
+npm install or yarn install
+
+3️⃣ **Run the project locally (Vite dev server):**
+
+npm run dev or yarn dev
+
+4️⃣ **Open in browser:**
+
+Terminal will show a local URL (usually http://localhost:5173)
+
+Open it to see Todo Tango in action!
