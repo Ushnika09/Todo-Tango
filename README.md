@@ -36,6 +36,7 @@
 1️⃣ **Clone the repository:**
 
 git clone https://github.com/Ushnika09/Todo-Tango.git
+
 cd Todo-Tango
 
 2️⃣ **Install dependencies:**
