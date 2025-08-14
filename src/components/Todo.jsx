@@ -6,10 +6,10 @@ function Todo({ todos,handleDel,handleEdit }) {
   const [done, setDone] = useState([]);
 
   useEffect(() => {
-    setDone((prev)=>{
-      return(
-        todos.map((_,i) =>prev[i] || false)
-      )}
+    setDone((prevDone)=>{
+      const newDone = todos.map((_, i) => prevDone[i] || false);
+      return newDone;
+    }
     );
   }, [todos]);
 
@@ -27,7 +27,8 @@ function Todo({ todos,handleDel,handleEdit }) {
 
             <div className="flex gap-5 justify-center items-center flex-1 min-w-0">
 
-              <input type="checkbox" onChange={()=>{
+              <input type="checkbox" checked={done[index] || false} 
+               onChange={()=>{
                 const newDone = [...done];
                 newDone[index]=!newDone[index]
                 setDone(newDone)
